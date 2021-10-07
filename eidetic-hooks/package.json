@@ -1,0 +1,28 @@
+{
+  "name": "eidetic-hooks",
+  "version": "1.0.0",
+  "description": "use React-Hooks \"Eidetically\"",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmileRush/eidetic.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "eidetic",
+    "eidetically",
+    "custom",
+    "easy"
+  ],
+  "author": "SmileRush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SmileRush/eidetic/issues"
+  },
+  "homepage": "https://github.com/SmileRush/eidetic#readme",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

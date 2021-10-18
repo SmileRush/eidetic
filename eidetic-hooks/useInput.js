@@ -1,23 +1,24 @@
-// import { useState } from "react";
+import { useState } from "react";
 
-export const useInput = (initialValue, validator) => {
+const useInput = (initialValue, validator) => {
 
-  // const [value, setValue] = useState(initialValue);
+  const [value, setValue] = useState(initialValue);
 
-  // const onChange = event => {
-  //   const { target: { value } } = event;
+  const onChange = event => {
+    const { target: { value } } = event;
 
-  //   let willUpdate = true
+    let willUpdate = true
 
-  //   if (typeof validator === "function") {
-  //     willUpdate = validator(value)
-  //   }
+    if (typeof validator === "function") {
+      willUpdate = validator(value)
+    }
 
-  //   if (willUpdate) {
-  //     setValue(value)
-  //   }
-  // }
+    if (willUpdate) {
+      setValue(value)
+    }
+  }
 
-  // return [value, onChange];
-  return ["Hello"]
+  return [value, onChange];
 };
+
+export default useInput

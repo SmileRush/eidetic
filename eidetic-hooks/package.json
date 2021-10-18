@@ -1,6 +1,6 @@
 {
   "name": "eidetic-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "use React-Hooks \"Eidetically\"",
   "main": "index.js",
   "repository": {

@@ -1,0 +1,66 @@
+{
+  "name": "eidetic-components",
+  "version": "0.0.2",
+  "description": "use React-Components \"Eidetically\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmileRush/eidetic.git"
+  },
+  "author": "SmileRush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SmileRush/eidetic/issues"
+  },
+  "homepage": "https://github.com/SmileRush/eidetic#readme",
+  "keywords": [
+    "react",
+    "components",
+    "eidetic",
+    "eidetically",
+    "custom",
+    "easy"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist && mkdir dist && babel src/lib -d dist --copy-files"
+  },
+  "module": "dist/TestComponent.js",
+  "main": "dist/TestComponent.js",
+  "babel": {
+    "presets": ["@babel/preset-react"]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/preset-react": "^7.16.0"
+  }
+}
